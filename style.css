@@ -1,0 +1,80 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    background-color: rgb(255, 255, 255);
+}
+
+.box{
+    width: 50vh;
+    height: fit-content;
+    border:2px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.917);
+    border-radius: 20px;
+    overflow: hidden;
+    padding:30px;
+}
+
+.heading-class{
+    height: 5vh;
+    color:white;
+    background-color: rgb(8, 106, 14);
+    /* background-color: rgb(149, 103, 22); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0px;
+    align-self: center;
+    width: 100%;
+}
+
+.upper-sub-class{
+    height: 15vh;
+    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.horizontal-line{
+    width: 100%;
+}
+
+.bottom-sub-class{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+    color:white;
+    
+}
+
+.element{
+    width: 2vw;
+    border:1px solid rgba(255, 255, 255, 0.769);
+    padding:30px;
+    justify-self: center;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 60%;
+    margin:3px 0px;
+}
+
+.element:hover{
+    background-color: rgb(16, 16, 7);
+}
+#symbol{
+    /* background-color: rgba(163, 127, 7, 0.963); */
+    background-color: rgb(8, 106, 14);
+
+}
+
+#symbol:hover{
+    opacity: 0.9;
+}
