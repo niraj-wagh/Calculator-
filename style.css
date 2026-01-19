@@ -1,80 +1,73 @@
-
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins";
-    background-color: rgb(255, 255, 255);
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: Arial;
 }
 
-.box{
-    width: 50vh;
-    height: fit-content;
-    border:2px solid black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.917);
-    border-radius: 20px;
-    overflow: hidden;
-    padding:30px;
+.calculator {
+  width: 360px;
+  background: #0b0b0b;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,255,153,.4);
+  color: white;
 }
 
-.heading-class{
-    height: 5vh;
-    color:white;
-    background-color: rgb(8, 106, 14);
-    /* background-color: rgb(149, 103, 22); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top:0px;
-    align-self: center;
-    width: 100%;
+h2 {
+  text-align: center;
+  color: #00ff99;
 }
 
-.upper-sub-class{
-    height: 15vh;
-    text-align: center;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
+input {
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
-.horizontal-line{
-    width: 100%;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-.bottom-sub-class{
-     display: grid;
-     grid-template-columns: repeat(4,1fr);
-    color:white;
-    
+button {
+  height: 45px;
+  background: #1f4037;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.element{
-    width: 2vw;
-    border:1px solid rgba(255, 255, 255, 0.769);
-    padding:30px;
-    justify-self: center;
-    text-align: center;
-    font-size: 1em;
-    border-radius: 60%;
-    margin:3px 0px;
+button:hover {
+  background: #00ff99;
+  color: black;
 }
 
-.element:hover{
-    background-color: rgb(16, 16, 7);
-}
-#symbol{
-    /* background-color: rgba(163, 127, 7, 0.963); */
-    background-color: rgb(8, 106, 14);
-
+.equal {
+  grid-column: span 2;
+  background: #00ff99;
+  color: black;
+  font-weight: bold;
 }
 
-#symbol:hover{
-    opacity: 0.9;
+.danger {
+  grid-column: span 2;
+  background: red;
+}
+
+.result {
+  margin-top: 15px;
+  text-align: center;
+  color: #00ff99;
+  font-size: 18px;
 }
